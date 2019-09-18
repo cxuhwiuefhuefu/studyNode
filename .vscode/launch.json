@@ -15,6 +15,18 @@
             "request": "launch",
             "name": "Client",
             "program": "${workspaceFolder}\\index9\\client.js"
+        },      
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server10",
+            "program": "${workspaceFolder}\\index10\\server.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Client10",
+            "program": "${workspaceFolder}\\index10\\client.js"
         }            
     ],
     "compounds": [
