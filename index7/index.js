@@ -33,8 +33,8 @@ console.log(x == z);
 // exports = a;
 // module.exports = b;
 
-module.exports.a = a;
-module.exports.b = b;
+// module.exports.a = a;
+// module.exports.b = b;
 
 
 
@@ -46,6 +46,8 @@ module.exports.b = b;
 // 要有个规范 用module.exports
 
 // 快捷键 Atr+Alt+N
+
+
 
 
 // 问题？ require是在哪里声明的呢 为什么我们拿来就行用呢 modules.exports是在哪里声明 exports是系统的吗 
