@@ -12,6 +12,15 @@ server.on("connection", function(socket) {
     socket.on("data", function(data) {
         console.log(data.toString()); // HTTP请求头
         // socket.write("hello broswer"); // 为啥浏览器不接收  因为我们这个HTTP请求和响应都得遵从HTTP协议
+        
+
+        // 拿到url
+        var request = data.toString().split("\r\n");
+        var url = request[0].split(" ")[1];
+        console.log(url);
+        
         socket.write("HTTP 200OK\r\nContent-type:text/html\r\nServer:DWS/1.1\r\n\r\n<html><body>hello broswer</body></html>");
+
+      
     })
 })
